@@ -1,0 +1,77 @@
+MSX88 Portable
+--------------
+
+Esta es la versión portable del MSX88. Con esta versión se puede utilizar el 
+Simulador MSX88 de manera fácil. 
+
+
+¿Con que sistemas operativos lo puedo utilizar? 
+-----------------------------------------------
+Esta versión portable funciona y está probada en los siguientes sistemas operativos: 
+Windows XP, Windows Vista y Windows 7. También se probó en GNU/Linux con el 
+programa Wine (http://www.winehq.org/) y si bien funciona le recomendamos 
+instalar el programa dosbox (http://dosbox.com/).
+
+
+Bajé el archivo comprimido zip ¿Qué hago?
+--------------------------------------------
+Una vez bajado el archivo Zip, hay que descomprimirlo en cualquier directorio 
+(por ejemplo el Escritorio). Se puede utilizar el WinZip, WinRar o cualquier programa
+similar para hacerlo, incluso Windows tiene soporte para descomprimir archivos
+con extensión zip. 
+
+Cuando lo haya descomprimido se habrá creado una carpeta llamada MSX88Portable 
+con varios archivos y carpetas dentro. De todas esas carpetas y archivos vamos
+a nombrar a los dos más importantes:
+
+  - Dentro de la carpeta creada hay un archivo MSX88Portable.exe (tiene un icono
+    con el nombre DOSBOX). Si ejecutamos este archivo (haciendo doble click), se 
+    iniciará el ambiente del simulador.
+
+  - También se creó una carpeta llamada MSX88, en la cual están todos los archivos 
+    pertenecientes al simulador MSX88. En esta carpeta deberíamos guardar nuestros 
+    archivos con extensión '.asm' para poder utilizarlos con el simulador. 
+
+
+¿Cómo utilizo el MSX88Portable?
+-------------------------------
+Antes de arrancar el simulador MSX88 hay que escribir y guardar los programas que 
+deseamos probar en el mismo dentro de la carpeta msx88 para que el entorno los 
+pueda utilizar.
+
+Una vez ejecutado el archivo MSX88Portable, se inicia el 'ambiente' y dentro de la 
+ventana del mismo podemos ejecutar los siguientes comandos (escribir el comando y 
+apretar ENTER):
+
+  - exit : Con este comando salimos del simulador
+
+  - asm88 : Con este comando invocamos al ensamblador de nuestros programas a simular
+
+  - link88 : Con este comando invocamos al linker del simulador, paso intermedio 
+             necesario para probar nuestros programas en el simulador MSX88
+
+  - msx88 : con este comando invocamos el simulador MSX88, ver el manual del MSX88 
+            para conocer el modo de utilizarlo.
+
+  - fed : con este comando invocamos un editor de textos simple para escribir los 
+          'programas fuente' dentro del ambiente de MSX88Portable
+
+Para mayor información sobre el uso del simulador, ver la información provista por la
+cátedra.
+
+
+Licencias
+---------
+
+MSX88Portable utiliza la versión portable del DOSBOX, que esta disponible en 
+http://portableapps.com/. La licencia es libre, para más información referise
+a la página oficial.
+
+DOSBOX es un proyecto de simulación de una PC corriendo DOS, la página oficial
+del proyecto es: http://dosbox.com/. La licencia es GPL.
+
+MSX88 es un producto de Rubén de Diego Martínez. MSX88 es de libre utilización 
+por instituciones de enseñanza pública y usuarios particulares individuales 
+sin ánimo de lucro, conforme se indica en la información de licencia que 
+contiene el programa. Para otro tipo de utilización consulte al propietario 
+del programa. La página oficial del producto es: http://verne.diatel.upm.es/msx88/
