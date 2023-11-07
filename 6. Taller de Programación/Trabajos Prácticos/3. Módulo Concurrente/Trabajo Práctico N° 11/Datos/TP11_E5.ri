@@ -48,14 +48,14 @@ procesos
     depositarPapeles(papeles)
   fin
 areas
-  area1_1 : AreaP(1,75,15,75)
-  area1_2 : AreaP(1,80,15,80)
-  area2_1 : AreaP(75,81,75,100)
-  area2_2 : AreaP(80,81,80,100)
-  area3_1 : AreaP(71,15,100,15)
-  area3_2 : AreaP(71,10,100,10)
-  area4_1 : AreaP(10,1,10,10)
-  area4_2 : AreaP(15,1,15,10)
+  area1a : AreaP(1,75,15,75)
+  area1b : AreaP(1,80,15,80)
+  area2a : AreaP(75,81,75,100)
+  area2b : AreaP(80,81,80,100)
+  area3a : AreaP(71,15,100,15)
+  area3b : AreaP(71,10,100,10)
+  area4a : AreaP(10,1,10,10)
+  area4b : AreaP(15,1,15,10)
 robots
   robot tipo1
   variables
@@ -101,14 +101,14 @@ variables
   robot3 : tipo3
   robot4 : tipo4
 comenzar
-  AsignarArea(robot1,area1_1)
-  AsignarArea(robot1,area1_2)
-  AsignarArea(robot2,area2_1)
-  AsignarArea(robot2,area2_2)
-  AsignarArea(robot3,area3_1)
-  AsignarArea(robot3,area3_2)
-  AsignarArea(robot4,area4_1)
-  AsignarArea(robot4,area4_2)
+  AsignarArea(robot1,area1a)
+  AsignarArea(robot1,area1b)
+  AsignarArea(robot2,area2a)
+  AsignarArea(robot2,area2b)
+  AsignarArea(robot3,area3a)
+  AsignarArea(robot3,area3b)
+  AsignarArea(robot4,area4a)
+  AsignarArea(robot4,area4b)
   Iniciar(robot1,1,75)
   Iniciar(robot2,75,81)
   Iniciar(robot3,71,10)

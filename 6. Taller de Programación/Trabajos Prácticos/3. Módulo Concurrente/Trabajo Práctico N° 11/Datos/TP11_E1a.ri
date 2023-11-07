@@ -1,4 +1,4 @@
-programa TP11_E1
+programa TP11_E1a
 procesos
   proceso juntarFloresEsquina (ES flores : numero ; ES esquinas : numero)
   comenzar
