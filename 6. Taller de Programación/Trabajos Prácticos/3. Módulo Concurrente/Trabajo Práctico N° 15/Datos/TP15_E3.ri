@@ -6,11 +6,11 @@ procesos
   comenzar
     av := PosAv
     ca := PosCa
+    flores := 0
     BloquearEsquina(10,10)
     Pos (10,10)
     mientras (HayFlorEnLaBolsa)
       depositarFlor
-      flores := flores - 1
     Pos (av,ca)
     LiberarEsquina(10,10)
   fin
@@ -53,23 +53,24 @@ areas
   areaC : AreaP(1,5,1,5)
 robots
   robot recolector
+  variables
+    ok : boolean
   comenzar
+    ok := F
     derecha
-    EnviarMensaje(V,robotC)
     recorrerCalle
-    EnviarMensaje(F,robotC)
+    EnviarMensaje(ok,robotC)
   fin
   robot cosechador
   variables
-    ok, ok1, ok2 : boolean
-    av, ca, flores : numero
+    ok : boolean
+    av, ca, flores, term : numero
   comenzar
     av := PosAv
     ca := PosCa
     flores := 0
-    RecibirMensaje(ok1,*)
-    RecibirMensaje(ok2,*)
-    mientras ((ok1) | (ok2))
+    term := 0
+    mientras (term < 2)
       RecibirMensaje(ok,*)
       si (ok)
         BloquearEsquina(10,10)
@@ -80,11 +81,7 @@ robots
         Pos (av,ca)
         LiberarEsquina(10,10)
       sino
-        si (ok1)
-          ok1 := F
-        sino
-          si (ok2)
-            ok2 := F
+        term := term + 1
     Informar ('FloresRecolectadas',flores)
   fin
 variables
